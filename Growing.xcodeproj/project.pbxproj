@@ -13,9 +13,17 @@
 		84A62A46272E305E0028CBFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A62A45272E305E0028CBFB /* Preview Assets.xcassets */; };
 		84A62A48272E305E0028CBFB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A62A47272E305E0028CBFB /* Persistence.swift */; };
 		84A62A4B272E305E0028CBFB /* Growing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A62A49272E305E0028CBFB /* Growing.xcdatamodeld */; };
+		84A62A52272E31620028CBFB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A62A51272E31620028CBFB /* CameraView.swift */; };
+		84A62A54272E31720028CBFB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A62A53272E31720028CBFB /* Coordinator.swift */; };
+		84A62A56272E318C0028CBFB /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A62A55272E318C0028CBFB /* ChatHelper.swift */; };
+		84A62A5B272E31A70028CBFB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84A62A5A272E31A70028CBFB /* Alamofire */; };
+		84A62ABB272F971F0028CBFB /* GrowingIntro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84A62ABA272F971F0028CBFB /* GrowingIntro.gif */; };
+		A2D66C3BD81E3F780E5C5C77 /* Pods_Growing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEED9F21FF420C7718AC97A /* Pods_Growing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FA4A77E5E853A949369EB73 /* Pods-Growing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growing.release.xcconfig"; path = "Target Support Files/Pods-Growing/Pods-Growing.release.xcconfig"; sourceTree = "<group>"; };
+		44EFDE6AEE8F43A6B10B398D /* Pods-Growing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growing.debug.xcconfig"; path = "Target Support Files/Pods-Growing/Pods-Growing.debug.xcconfig"; sourceTree = "<group>"; };
 		84A62A3B272E305D0028CBFB /* Growing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Growing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A62A3E272E305D0028CBFB /* GrowingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingApp.swift; sourceTree = "<group>"; };
 		84A62A40272E305D0028CBFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +31,11 @@
 		84A62A45272E305E0028CBFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84A62A47272E305E0028CBFB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		84A62A4A272E305E0028CBFB /* Growing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Growing.xcdatamodel; sourceTree = "<group>"; };
+		84A62A51272E31620028CBFB /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		84A62A53272E31720028CBFB /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		84A62A55272E318C0028CBFB /* ChatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		84A62ABA272F971F0028CBFB /* GrowingIntro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GrowingIntro.gif; sourceTree = "<group>"; };
+		EEEED9F21FF420C7718AC97A /* Pods_Growing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Growing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A62A5B272E31A70028CBFB /* Alamofire in Frameworks */,
+				A2D66C3BD81E3F780E5C5C77 /* Pods_Growing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B57B747982EE29AABFBE4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEEED9F21FF420C7718AC97A /* Pods_Growing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A64A66F1ABF5DC8C782A350 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44EFDE6AEE8F43A6B10B398D /* Pods-Growing.debug.xcconfig */,
+				2FA4A77E5E853A949369EB73 /* Pods-Growing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84A62A32272E305D0028CBFB = {
 			isa = PBXGroup;
 			children = (
 				84A62A3D272E305D0028CBFB /* Growing */,
 				84A62A3C272E305D0028CBFB /* Products */,
+				7A64A66F1ABF5DC8C782A350 /* Pods */,
+				0B57B747982EE29AABFBE4AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +89,11 @@
 		84A62A3D272E305D0028CBFB /* Growing */ = {
 			isa = PBXGroup;
 			children = (
+				84A62ABA272F971F0028CBFB /* GrowingIntro.gif */,
 				84A62A3E272E305D0028CBFB /* GrowingApp.swift */,
+				84A62A55272E318C0028CBFB /* ChatHelper.swift */,
+				84A62A53272E31720028CBFB /* Coordinator.swift */,
+				84A62A51272E31620028CBFB /* CameraView.swift */,
 				84A62A40272E305D0028CBFB /* ContentView.swift */,
 				84A62A42272E305E0028CBFB /* Assets.xcassets */,
 				84A62A47272E305E0028CBFB /* Persistence.swift */,
@@ -80,15 +118,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A62A4E272E305E0028CBFB /* Build configuration list for PBXNativeTarget "Growing" */;
 			buildPhases = (
+				8AC8E9A1A9F5DC3F468251BB /* [CP] Check Pods Manifest.lock */,
 				84A62A37272E305D0028CBFB /* Sources */,
 				84A62A38272E305D0028CBFB /* Frameworks */,
 				84A62A39272E305D0028CBFB /* Resources */,
+				1D632E271F206E1D3855EDF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Growing;
+			packageProductDependencies = (
+				84A62A5A272E31A70028CBFB /* Alamofire */,
+			);
 			productName = Growing;
 			productReference = 84A62A3B272E305D0028CBFB /* Growing.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 84A62A32272E305D0028CBFB;
+			packageReferences = (
+				84A62A59272E31A70028CBFB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 84A62A3C272E305D0028CBFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,10 +179,53 @@
 			files = (
 				84A62A46272E305E0028CBFB /* Preview Assets.xcassets in Resources */,
 				84A62A43272E305E0028CBFB /* Assets.xcassets in Resources */,
+				84A62ABB272F971F0028CBFB /* GrowingIntro.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D632E271F206E1D3855EDF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Growing/Pods-Growing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Growing/Pods-Growing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Growing/Pods-Growing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC8E9A1A9F5DC3F468251BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Growing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A62A37272E305D0028CBFB /* Sources */ = {
@@ -145,7 +234,10 @@
 			files = (
 				84A62A48272E305E0028CBFB /* Persistence.swift in Sources */,
 				84A62A4B272E305E0028CBFB /* Growing.xcdatamodeld in Sources */,
+				84A62A54272E31720028CBFB /* Coordinator.swift in Sources */,
 				84A62A41272E305D0028CBFB /* ContentView.swift in Sources */,
+				84A62A56272E318C0028CBFB /* ChatHelper.swift in Sources */,
+				84A62A52272E31620028CBFB /* CameraView.swift in Sources */,
 				84A62A3F272E305D0028CBFB /* GrowingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +363,7 @@
 		};
 		84A62A4F272E305E0028CBFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44EFDE6AEE8F43A6B10B398D /* Pods-Growing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +393,7 @@
 		};
 		84A62A50272E305F0028CBFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA4A77E5E853A949369EB73 /* Pods-Growing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84A62A59272E31A70028CBFB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84A62A5A272E31A70028CBFB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84A62A59272E31A70028CBFB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		84A62A49272E305E0028CBFB /* Growing.xcdatamodeld */ = {
