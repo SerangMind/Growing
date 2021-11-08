@@ -1,0 +1,6 @@
+framework module Pods_Growing {
+  umbrella header "Pods-Growing-umbrella.h"
+
+  export *
+  module * { export * }
+}
